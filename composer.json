@@ -1,0 +1,26 @@
+{
+    "name": "wdalmut/frankie-tiny-app",
+    "license": "MIT",
+    "require": {
+        "wdalmut/frankie-modular": "dev-master",
+        "wdalmut/frankie": "dev-master",
+        "wdalmut/frankie-framework-module": "dev-master",
+        "wdalmut/frankie-foundation-module": "dev-master",
+        "wdalmut/frankie-error-module": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": ["./src"]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": ["./app"],
+            "App\\": ["./tests/unit"],
+            "App\\Integration\\": ["./tests/integration"]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    }
+}
